@@ -1,0 +1,1482 @@
+/* ==========================
+   Global
+========================== */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#F5F1E6;
+
+    color:#303526;
+
+    font-family:
+    "Noto Sans SC",
+    sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+a{
+
+    text-decoration:none;
+
+    color:#4F5F35;
+
+}
+
+
+
+/* ==========================
+ Navigation
+========================== */
+
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    z-index:100;
+
+    background:
+
+    rgba(245,241,230,.85);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+nav{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:25px 50px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.logo{
+
+    font-family:"Caveat";
+
+    font-size:40px;
+
+    color:#73854A;
+
+}
+
+
+
+.menu{
+
+    display:flex;
+
+    gap:35px;
+
+    align-items:center;
+
+}
+
+
+
+.menu a{
+
+    font-size:16px;
+
+}
+
+
+
+.menu button{
+
+    border:none;
+
+    background:#DDE4B9;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    color:#526236;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* ==========================
+ Hero Vision Board
+========================== */
+
+
+.hero{
+
+
+min-height:100vh;
+
+padding:150px 10% 80px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+
+position:relative;
+
+overflow:hidden;
+
+
+}
+
+
+
+
+.hero-text{
+
+    width:45%;
+
+}
+
+
+
+.hero-text h1{
+
+    font-family:"Playfair Display";
+
+    font-size:90px;
+
+    color:#303526;
+
+}
+
+
+
+.hero-text h2{
+
+
+    margin-top:20px;
+
+    font-family:"Caveat";
+
+    font-size:55px;
+
+    line-height:1.1;
+
+    color:#879B55;
+
+
+}
+
+
+
+.hero-text p{
+
+
+    margin-top:25px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+
+}
+
+
+
+.btn{
+
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:14px 35px;
+
+    background:#98A85D;
+
+    color:white;
+
+    border-radius:40px;
+
+    transition:.4s;
+
+}
+
+
+
+.btn:hover{
+
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 15px 30px rgba(120,140,70,.3);
+
+}
+
+
+
+
+
+/* Vision Board */
+
+
+.vision-board{
+
+
+    width:500px;
+
+    height:500px;
+
+    position:relative;
+
+}
+
+
+
+.tree{
+
+
+    position:absolute;
+
+    width:330px;
+
+    right:20px;
+
+    top:20px;
+
+
+}
+
+
+
+.camera{
+
+
+    position:absolute;
+
+    width:100px;
+
+    left:30px;
+
+    bottom:100px;
+
+
+}
+
+
+
+.hero-photo{
+
+
+position:absolute;
+
+width:220px;
+
+height:260px;
+
+object-fit:cover;
+
+left:130px;
+
+bottom:20px;
+
+padding:10px;
+
+background:white;
+
+transform:rotate(-6deg);
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.15);
+
+
+z-index:3;
+
+
+}
+
+
+
+.vision-board img{
+
+    transition:.5s;
+
+}
+
+
+
+.vision-board img:hover{
+
+
+    transform:
+
+    scale(1.08)
+    rotate(3deg);
+
+
+    filter:
+
+    drop-shadow(
+    0 15px 25px rgba(120,140,70,.4)
+    );
+
+}
+
+
+
+
+
+/* ==========================
+ Section
+========================== */
+
+
+section{
+
+    padding:100px 10%;
+
+}
+
+
+
+.section-title{
+
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    font-family:
+
+    "Playfair Display";
+
+    font-size:55px;
+
+    color:#34402A;
+
+
+}
+
+
+
+
+
+/* ==========================
+ About
+========================== */
+
+
+.about{
+
+
+display:grid;
+
+grid-template-columns:
+
+350px 1fr;
+
+gap:80px;
+
+align-items:center;
+
+
+}
+
+
+
+
+
+.about img{
+
+width:380px;
+height:480px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+
+
+.about img:hover{
+
+transform:
+rotate(0deg)
+scale(1.05);
+
+}
+
+.about img{
+
+transform:rotate(-3deg);
+
+transition:0.5s;
+
+}
+
+
+.about img:hover{
+
+transform:
+rotate(0deg)
+scale(1.05);
+
+}
+
+
+.about h3{
+
+
+font-family:"Caveat";
+
+font-size:35px;
+
+color:#879B55;
+
+}
+
+
+
+
+.about p{
+
+
+margin:20px 0;
+
+line-height:1.9;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+ Projects
+ Vision Board Style
+========================== */
+
+
+.projects{
+
+display:grid;
+
+grid-template-columns:repeat(2,500px);
+
+gap:50px;
+
+justify-content:center;
+
+}
+
+
+
+.project-card{
+
+
+position:relative;
+
+
+}
+
+
+
+.tape{
+
+
+position:absolute;
+
+
+top:-15px;
+
+
+left:35%;
+
+
+width:90px;
+
+
+height:35px;
+
+
+background:
+
+rgba(190,200,130,.65);
+
+
+transform:rotate(-5deg);
+
+
+z-index:5;
+
+
+}
+
+
+
+
+.paper{
+
+
+background:#fffdf7;
+
+
+padding:25px;
+
+min-height:420px;
+
+
+position:relative;
+
+
+box-shadow:
+
+0 15px 35px rgba(80,80,50,.15);
+
+
+}
+
+
+
+.paper::after{
+
+
+content:"";
+
+
+position:absolute;
+
+
+bottom:-15px;
+
+
+left:0;
+
+
+width:100%;
+
+
+height:25px;
+
+
+background:
+
+linear-gradient(
+
+135deg,
+
+transparent 10px,
+
+#fffdf7 10px
+
+);
+
+
+}
+
+
+
+
+.image-wrapper{
+
+
+overflow:hidden;
+
+border-radius:15px;
+
+position:relative;
+
+
+}
+
+
+.image-wrapper img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+/* Project 2 square cover */
+
+.image-wrapper img.square-img{
+
+    aspect-ratio:1 / 1;
+
+    object-fit:cover;
+
+}
+
+.image-wrapper::before{
+
+
+content:"";
+
+
+position:absolute;
+
+
+width:160px;
+
+
+height:160px;
+
+
+border-radius:50%;
+
+
+background:
+
+radial-gradient(
+
+circle,
+
+rgba(240,245,190,.8),
+
+transparent 70%
+
+);
+
+
+
+top:50%;
+
+left:50%;
+
+transform:
+
+translate(-50%,-50%);
+
+
+opacity:0;
+
+z-index:2;
+
+transition:.5s;
+
+
+}
+
+
+
+
+.image-wrapper:hover::before{
+
+
+opacity:1;
+
+
+}
+
+
+
+
+.image-wrapper:hover img{
+
+
+transform:
+
+scale(1.12);
+
+
+}
+
+
+
+
+.paper h3{
+
+
+font-family:"Caveat";
+
+
+font-size:35px;
+
+
+color:#687A43;
+
+
+margin-top:20px;
+
+
+}
+
+
+
+.category{
+
+
+display:inline-block;
+
+
+background:#E6E8C8;
+
+
+padding:5px 15px;
+
+
+border-radius:20px;
+
+
+color:#687A43;
+
+
+}
+
+
+
+
+.paper a{
+
+
+display:inline-block;
+
+
+margin-top:15px;
+
+
+color:#879B55;
+
+
+}
+
+
+
+
+
+
+/* ==========================
+ Audio
+========================== */
+
+
+audio{
+
+
+width:100%;
+
+margin-top:20px;
+
+accent-color:#8C9D57;
+
+
+}
+
+
+
+/* ==========================
+ Gallery
+========================== */
+
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+align-items:center;
+
+}
+
+
+
+.gallery img{
+
+width:100%;
+
+object-fit:cover;
+
+padding:10px;
+
+background:white;
+
+border-radius:15px;
+
+box-shadow:
+
+0 15px 30px rgba(0,0,0,.12);
+
+transition:.5s;
+
+}
+
+
+
+/* 横屏 16:9 */
+
+.gallery .landscape{
+
+aspect-ratio:16 / 9;
+
+}
+
+
+
+/* 竖屏 9:16 */
+
+.gallery .portrait{
+
+aspect-ratio:9 / 16;
+
+}
+
+
+
+/* 正方形 1:1 */
+
+.gallery .square{
+
+aspect-ratio:1 / 1;
+
+}
+
+
+
+/* 图片悬浮效果 */
+
+.gallery img:hover{
+
+transform:
+
+scale(1.08)
+rotate(2deg);
+
+
+box-shadow:
+
+0 25px 50px rgba(120,140,70,.35);
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+ Video Archive
+========================== */
+
+
+.video{
+
+
+text-align:center;
+
+
+}
+
+
+
+.video-cover{
+
+
+width:70%;
+
+
+margin:30px auto;
+
+
+border-radius:20px;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+ Contact
+========================== */
+
+
+#contact{
+
+
+text-align:center;
+
+
+}
+
+
+
+#contact p{
+
+
+margin-top:20px;
+
+
+font-size:18px;
+
+
+}
+
+
+
+
+
+footer{
+
+
+padding:30px;
+
+text-align:center;
+
+background:#E6E8C8;
+
+
+}
+
+
+/* ==========================
+ Hero Floating Icons
+========================== */
+
+
+.floating-camera,
+.floating-film,
+.floating-gallery{
+
+
+position:absolute;
+
+
+filter:
+
+invert(45%)
+sepia(20%)
+saturate(700%)
+hue-rotate(40deg)
+brightness(90%);
+
+
+opacity:.35;
+
+
+z-index:1;
+
+
+}
+
+
+
+
+/* Camera */
+
+.floating-camera{
+
+    position:absolute;
+
+    width:90px;
+
+    top:80px;
+
+    left:80px;
+
+    z-index:20;
+
+    opacity:.6;
+
+    animation:
+    cameraFloat 5s ease-in-out infinite;
+
+}
+
+
+
+
+/* Film */
+
+.floating-film{
+
+    position:absolute;
+
+    width:180px;
+
+    top:60px;
+
+    left:200px;
+
+    z-index:20;
+
+    opacity:.6;
+
+    animation:
+    filmFloat 6s ease-in-out infinite;
+
+}
+
+
+
+
+/* Gallery */
+
+
+.floating-gallery{
+
+    position:absolute;
+
+    width:90px;
+
+    top:70px;
+
+    left:410px;
+
+    z-index:20;
+
+    opacity:.6;
+
+    animation:
+    galleryFloat 5s ease-in-out infinite;
+
+}
+
+
+
+
+
+
+/* Animation */
+
+
+@keyframes cameraFloat{
+
+
+0%,100%{
+
+
+transform:
+
+translateY(0)
+rotate(-8deg);
+
+
+}
+
+
+50%{
+
+
+transform:
+
+translateY(-15px)
+rotate(-3deg);
+
+
+}
+
+
+}
+
+
+
+
+
+@keyframes filmFloat{
+
+
+0%,100%{
+
+
+transform:
+
+translateY(0)
+rotate(5deg);
+
+
+}
+
+
+50%{
+
+
+transform:
+
+translateY(20px)
+rotate(8deg);
+
+
+}
+
+
+}
+
+
+
+
+
+@keyframes galleryFloat{
+
+
+0%,100%{
+
+
+transform:
+
+translateY(0)
+rotate(-5deg);
+
+
+}
+
+
+50%{
+
+
+transform:
+
+translateY(-20px)
+rotate(0deg);
+
+
+}
+
+
+}
+
+
+/* ==========================
+ Mobile
+========================== */
+
+
+@media(max-width:900px){
+
+
+
+/* ==========================
+ Global
+========================== */
+
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* ==========================
+ Hero
+========================== */
+
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:
+
+    120px 30px 60px;
+
+}
+
+
+
+.hero-text{
+
+    width:100%;
+
+}
+
+
+
+.hero-text h1{
+
+    font-size:55px;
+
+}
+
+
+
+.hero-text h2{
+
+    font-size:40px;
+
+}
+
+
+
+.hero-text p{
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* ==========================
+ Vision Board Mobile
+========================== */
+
+
+.vision-board{
+
+    margin-top:50px;
+
+    width:320px;
+
+    height:320px;
+
+}
+
+
+
+
+
+/* ==========================
+ Floating Icons Mobile
+========================== */
+
+
+
+.floating-camera{
+
+    display:block;
+
+    width:45px;
+
+    top:35px;
+
+    left:40px;
+
+    z-index:20;
+
+}
+
+
+
+.floating-film{
+
+    display:block;
+
+    width:100px;
+
+    top:25px;
+
+    left:110px;
+
+    z-index:20;
+
+}
+
+
+
+.floating-gallery{
+
+    display:block;
+
+    width:45px;
+
+    top:40px;
+
+    left:230px;
+
+    z-index:20;
+
+}
+
+
+
+
+
+/* ==========================
+ Hero Photo Mobile
+========================== */
+
+
+.hero-photo{
+
+    width:160px;
+
+    height:200px;
+
+    left:80px;
+
+    bottom:20px;
+
+    z-index:5;
+
+}
+
+
+
+
+
+/* ==========================
+ About Mobile
+========================== */
+
+
+.about{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+
+
+.about img{
+
+    width:100%;
+
+    height:auto;
+
+    max-width:330px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+/* ==========================
+ Projects Mobile
+========================== */
+
+
+.projects{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+
+
+.paper{
+
+    padding:20px;
+
+}
+
+
+
+.image-wrapper img{
+
+    aspect-ratio:16 / 9;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+/* ==========================
+ Gallery Mobile
+========================== */
+
+
+.gallery{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+}
+
+
+
+
+
+/* ==========================
+ Navigation Mobile
+========================== */
+
+
+.menu{
+
+    display:none;
+
+}
+
+
+
+.logo{
+
+    font-size:32px;
+
+}
+
+
+
+}
